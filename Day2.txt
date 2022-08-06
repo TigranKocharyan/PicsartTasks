@@ -1,0 +1,66 @@
+1.def strmove(str, n):
+    k = n % len(str)
+    str_arr = list(str)
+    for i in range(k):
+        str_arr.insert(0, str_arr[len(str) - 1])
+        str_arr.pop()
+    return ''.join(str_arr)
+print(strmove("hello", 2))
+
+2.count = 0
+for i in range(1000):
+    if i % 3 == 0 or i % 5 == 0:
+        count+=i
+print(count)
+
+3. prev = 0
+cur = 1
+count = 0
+while True:
+    prev, cur = cur, cur + prev
+    if cur >= 4000000:
+        break
+    if cur % 2 == 0:
+        count += cur
+print(count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
